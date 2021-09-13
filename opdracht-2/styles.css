@@ -27,16 +27,18 @@
 }
 
 ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between; /*doet niets*/
     align-items: center; /*doet niets*/
-    list-style-type: none;
+    flex-basis: calc(25% - 20px);
 }
 
-li {
-    margin-right: 50px;
-}
+/*li {*/
+    /*flex-basis alle opties uitgeprobeer en helpt niet*/
+    /*margin-right: 50px; mochten we niet gebruiken van de feedbackhandleiding*/
+/*}*/
 
 form {
     display: flex;
