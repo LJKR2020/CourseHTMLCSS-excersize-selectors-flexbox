@@ -31,17 +31,18 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*align-items: center;*/
     /*flex-basis: calc(25% - 20px); Werkt ook*/
     flex-basis: 400px;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-/*li {*/
-    /*flex-basis alle opties uitgeprobeerd en helpt niet*/
-    /*margin-right: 50px; mochten we niet gebruiken van de feedbackhandleiding*/
-/*}*/
+.four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 form {
     display: flex;
@@ -50,17 +51,29 @@ form {
     align-items: center;
 }
 
-.five {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    min-width: 400px;
-    align-items: center;
-    padding: 10px;
-}
+/*.five {*/
+/*    display: flex;*/
+/*    flex-flow: row;*/
+/*    justify-content: flex-start;*/
+/*    min-width: 400px;*/
+/*    align-items: center;*/
+/*    padding: 10px;*/
+/*}*/
 
 /*article {*/
 /*    display: flex;*/
 /*    flex-wrap: wrap;*/
+/*    flex-grow: 1;*/
 /*    justify-content: flex-start;*/
 /*}*/
+
+.five {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 360px;
+}

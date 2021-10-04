@@ -17,7 +17,7 @@ body {
 /* 1.2 Verander de kleur van alle list items in de unordered list
 naar hsl(110, 29%, 52%) */
 
-ul {
+ul li {
     color: hsl(110, 29%, 52%);
 }
 
@@ -25,7 +25,7 @@ ul {
 en maak de lettergrootte kleiner  */
 
 .footer-copyright {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte
@@ -49,30 +49,26 @@ main a:hover {
 
 main a:visited {
     color: hsl(100, 79%, 56%);
+    text-decoration: none;
 }
 
 /* 1.6 Verander de achtergrond van de SignUp button. Tip:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
 
-[type="submit"] {
+input[type="submit"] {
     background-color: red;
 }
 
 /* 1.7 Geef het tekst-veld een blauwe rand wanneer hij in focus is */
 
-[type="text"]:focus {
-    border-width: 2px;
-    /*border-top-color: hsl(200, 100%, 25%);*/
-    /*border-left-color: hsl(200, 100%, 25%);*/
-    /*border-right-color: hsl(200, 100%, 25%);*/
-    /*border-bottom-color: hsl(200, 100%, 25%);*/
-    border-color: hsl(200, 100%, 25%);
+input[type="text"]:focus {
+    border: 2px solid hsl(200, 100%, 50%);
 }
 
 /* 1.8 Target alle heading tags op de pagina en zet hun font-family op
 'Noto Sans JP', sans-serif */
 
-header {
+h1, h2, h3 {
     font-family: "Noto Sans JP", sans-serif;
 }
 
